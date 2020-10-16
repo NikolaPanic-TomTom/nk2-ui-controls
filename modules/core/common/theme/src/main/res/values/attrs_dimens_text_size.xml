@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <declare-styleable name="TtiviThemeCategoryDimensTextSize">
+        <!-- Text sizes are specified in dips instead of sp because the UI should look precisely
+        as specified by the UX visual design which takes into account alignment of text with
+        non-text items. This means that text size should not be changable by the user. 1dip = 1sp is
+         used. -->
+        <attr name="ttivi_text_size_h1" format="dimension" />
+        <attr name="ttivi_text_size_h2" format="dimension" />
+        <attr name="ttivi_text_size_h3" format="dimension" />
+        <attr name="ttivi_text_size_h4" format="dimension" />
+        <attr name="ttivi_text_size_h5" format="dimension" />
+        <attr name="ttivi_text_size_b1" format="dimension" />
+        <attr name="ttivi_text_size_b2" format="dimension" />
+
+        <attr name="ttivi_default_button_text_size" format="dimension" />
+    </declare-styleable>
+</resources>

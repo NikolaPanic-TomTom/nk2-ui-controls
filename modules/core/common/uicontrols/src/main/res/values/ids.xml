@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <!-- The ID of the breadcrumbs bar that can be shown in task panels. In order for a task
+         panel to contain a breadcrumbs bar, it must have a [BreadcrumbsBarView] with this ID
+         inside of its layout. The system UI will automatically update its contents when the
+         task panel is presented. -->
+    <id name="ttivi_breadcrumbs_bar" />
+</resources>

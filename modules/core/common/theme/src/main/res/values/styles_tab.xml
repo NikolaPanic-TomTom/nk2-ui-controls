@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="TtiviTabText">
+        <item name="android:textColor">@color/ttivi_tab_tint</item>
+        <item name="android:layout_marginTop">?attr/ttivi_spacing_xxxs</item>
+        <item name="android:layout_marginHorizontal">?attr/ttivi_spacing_xxs</item>
+        <item name="android:layout_marginBottom">?attr/ttivi_spacing_m</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAlignment">center</item>
+        <item name="ttiviTextSizeIdentifier">H5</item>
+    </style>
+
+    <style name="TtiviTabIcon">
+        <item name="android:tint">@color/ttivi_tab_tint</item>
+        <item name="android:layout_width">?attr/ttivi_icon_size_s</item>
+        <item name="android:layout_height">?attr/ttivi_icon_size_s</item>
+        <item name="android:layout_marginTop">?attr/ttivi_spacing_m</item>
+    </style>
+
+    <style name="TtiviTabTextOnly">
+        <item name="android:textColor">@color/ttivi_tab_tint</item>
+        <item name="android:layout_marginHorizontal">?attr/ttivi_spacing_xxs</item>
+        <item name="android:layout_marginVertical">?attr/ttivi_spacing_m</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAlignment">center</item>
+        <item name="ttiviTextSizeIdentifier">H5</item>
+    </style>
+
+    <style name="TtiviTabIconOnly">
+        <item name="android:tint">@color/ttivi_tab_tint</item>
+        <item name="android:layout_width">?attr/ttivi_icon_size_m</item>
+        <item name="android:layout_height">?attr/ttivi_icon_size_m</item>
+    </style>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="cornerRadius"
+            type="java.lang.Integer" />
+
+        <variable
+            name="viewModel"
+            type="com.tomtom.nk2.core.common.uicontrols.view.TtiviCardViewRoundedImageViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        auto:cardBackgroundColor="@null"
+        auto:cardCornerRadius="@{cornerRadius}"
+        auto:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.tomtom.nk2.core.common.uicontrols.view.TtiviRemoteImageView
+                style="@style/TtiviRoundedImage.Image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="false"
+                android:antialias="true"
+                android:background="@{viewModel.backgroundImage}"
+                android:foreground="@{viewModel.foregroundImage}"
+                android:scaleType="centerCrop"
+                android:src="@{viewModel.sourceImage}"
+                auto:ttiviPlaceholderDrawable="@{viewModel.sourceImagePlaceholder}"
+                auto:ttiviUri="@{viewModel.remoteImageUri}"
+                auto:layout_constraintBottom_toBottomOf="parent"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+                style="@style/TtiviRoundedImage.TextOnImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@{viewModel.textOnImage}"
+                auto:layout_constraintBottom_toBottomOf="@id/ttivi_cardview_rounded_image_text_bottom"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toTopOf="@id/ttivi_cardview_rounded_image_text_top"
+                auto:ttiviTextSizeIdentifier="H2"
+                auto:ttiviTextWeight="medium"
+                auto:visibleIfNotNull="@{viewModel.textOnImage}"
+                tools:text="AB" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/ttivi_cardview_rounded_image_text_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                auto:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/ttivi_cardview_rounded_image_text_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                auto:layout_constraintGuide_percent="0.75" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

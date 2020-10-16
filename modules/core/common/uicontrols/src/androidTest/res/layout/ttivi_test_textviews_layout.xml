@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ttivi_textview_test_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_black"
+        auto:ttiviTextWeight="medium"
+        auto:ttiviTextSizeIdentifier="H1" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_black"
+        auto:ttiviTextWeight="medium"
+        auto:ttiviTextSizeIdentifier="H2" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_black"
+        auto:ttiviTextWeight="medium"
+        auto:ttiviTextSizeIdentifier="H3" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_black"
+        auto:ttiviTextWeight="medium"
+        auto:ttiviTextSizeIdentifier="H4" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_black"
+        auto:ttiviTextWeight="medium"
+        auto:ttiviTextSizeIdentifier="H5" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_black"
+        auto:ttiviTextWeight="medium"
+        auto:ttiviTextSizeIdentifier="B1" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_black"
+        auto:ttiviTextWeight="medium"
+        auto:ttiviTextSizeIdentifier="B2" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_black"
+        auto:ttiviTextWeight="bold"
+        auto:ttiviTextSizeIdentifier="H1" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_thin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_black"
+        auto:ttiviTextWeight="thin"
+        auto:ttiviTextSizeIdentifier="H1" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+        android:id="@+id/ttivi_test_textview_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttivi_test_textviews_test_string"
+        android:textColor="?attr/ttivi_color_positive_normal"
+        auto:ttiviTextWeight="medium"
+        auto:ttiviTextSizeIdentifier="H1" />
+</LinearLayout>

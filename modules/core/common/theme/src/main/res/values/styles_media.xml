@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Common top-level style for media player styles. It should not inherit from anything
+    such as one of Android's default theme styles otherwise the UI will not look exactly
+    the same on different versions of Android and updating can change the UI. -->
+    <style name="TtiviMedia">
+        <item name="android:background">?attr/ttivi_color_floating_panel_background</item>
+        <item name="android:textColor">?attr/ttivi_color_text_primary</item>
+    </style>
+
+    <style name="TtiviMedia.Header">
+    </style>
+
+    <style name="TtiviMedia.Header.Text">
+        <item name="android:textColor">?attr/ttivi_color_text_secondary</item>
+    </style>
+
+</resources>

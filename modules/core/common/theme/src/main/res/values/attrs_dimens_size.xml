@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <declare-styleable name="TtiviThemeCategoryDimensSize">
+        <attr name="ttivi_size_mainmenu_panel" format="dimension" />
+        <attr name="ttivi_size_mainmenu_button_width" format="dimension" />
+        <attr name="ttivi_size_mainmenu_button_height" format="dimension" />
+        <attr name="ttivi_size_mainmenu_button_text_height_min" format="dimension" />
+        <attr name="ttivi_size_mainmenu_button_text_height_max" format="dimension" />
+        <attr name="ttivi_size_mainmenu_button_text_max_lines" format="integer" />
+
+        <attr name="ttivi_size_notification_panel_width" format="dimension" />
+        <!-- The spec'd top padding minus the notification panel spacing. -->
+        <attr name="ttivi_size_notification_label_line_height" format="dimension" />
+        <attr name="ttivi_size_notification_option_separation_line_height" format="dimension" />
+
+        <attr name="ttivi_size_default_button_height" format="dimension" />
+
+        <attr name="ttivi_size_default_button_fading_edge_length" format="dimension" />
+
+        <attr name="ttivi_size_task_panel_sidebar_width" format="dimension" />
+        <attr name="ttivi_size_panels_separation_line" format="dimension" />
+
+        <attr name="ttivi_size_list_header_height" format="dimension" />
+        <attr name="ttivi_size_list_minimum_height" format="dimension" />
+        <attr name="ttivi_size_list_fading_edge_length" format="dimension" />
+        <attr name="ttivi_size_list_navigation_bar_width" format="dimension" />
+
+        <attr name="ttivi_size_list_item_text_max_lines" format="integer" />
+
+        <!-- Information control attributes, see https://zpl.io/aB0YwNA -->
+        <attr name="ttivi_size_information_control_minimum_height" format="dimension" />
+        <attr name="ttivi_size_information_control_additional_text_max_width" format="dimension" />
+        <attr name="ttivi_size_information_control_additional_text_only_max_width" format="dimension" />
+
+        <!-- Height of layout divider, see https://zpl.io/2yvqMv9 -->
+        <attr name="ttivi_size_horizontal_layout_divider_height" format="dimension" />
+
+        <attr name="ttivi_size_contact_details_control_section_height" format="dimension" />
+        <attr name="ttivi_size_contact_details_info_section_minimum_height" format="dimension" />
+
+        <attr name="ttivi_size_eta_panel_width" format="dimension" />
+
+        <attr name="ttivi_size_miniplayer_title_text_height" format="dimension" />
+        <attr name="ttivi_size_media_player_source_selector_minimum_width" format="dimension" />
+        <attr name="ttivi_size_media_player_source_selector_maximum_width" format="dimension" />
+        <attr name="ttivi_size_media_player_source_selector_minimum_height" format="dimension" />
+        <attr name="ttivi_size_media_player_source_selector_maximum_height" format="dimension" />
+        <attr name="ttivi_size_media_player_source_selector_header_height" format="dimension" />
+        <attr name="ttivi_size_media_player_media_item_minimum_width" format="dimension" />
+        <attr name="ttivi_size_media_player_media_item_maximum_width" format="dimension" />
+        <attr name="ttivi_size_media_player_playbackcontrols_progressbar_height" format="dimension" />
+        <attr name="ttivi_size_media_player_playbackcontrols_about_section_min_width" format="dimension" />
+
+        <attr name="ttivi_size_process_bar_button_width" format="dimension" />
+
+        <attr name="ttivi_size_control_center_height" format="dimension" />
+
+        <attr name="ttivi_size_guidance_panel_width" format="dimension" />
+
+        <attr name="ttivi_size_next_instruction_distance_min_lines" format="integer" min="0" />
+        <attr name="ttivi_size_next_instruction_streetname_min_lines" format="integer" min="0" />
+        <attr name="ttivi_size_next_instruction_distance_max_lines" format="integer" min="0" />
+        <attr name="ttivi_size_next_instruction_streetname_max_lines" format="integer" min="0" />
+
+        <attr name="ttivi_size_tab_text_only_height" format="dimension" />
+        <attr name="ttivi_size_tab_icon_only_height" format="dimension" />
+        <attr name="ttivi_size_tab_text_and_icon_height" format="dimension" />
+        <attr name="ttivi_size_tab_bar_text_only_or_icon_only_height" format="dimension" />
+        <attr name="ttivi_size_tab_bar_line_height" format="dimension" />
+        <attr name="ttivi_size_tab_bar_indicator_height" format="dimension" />
+        <attr name="ttivi_size_tab_bar_padding" format="dimension" />
+
+        <attr name="ttivi_size_breadcrumbs_bar_separator_width" format="dimension" />
+
+        <attr name="ttivi_size_task_panel_top_bar_height" format="dimension" />
+
+        <attr name="ttivi_size_vpaui_template_image_height" format="dimension" />
+    </declare-styleable>
+</resources>

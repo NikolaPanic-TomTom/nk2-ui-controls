@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <declare-styleable name="TtiviThemeCategoryGradients">
+        <!-- TODO(IVI-1331): update gradient names when UX spec is finalized. -->
+        <attr name="ttivi_gradient_01" format="reference" />
+        <attr name="ttivi_gradient_02" format="reference" />
+        <attr name="ttivi_gradient_03" format="reference" />
+        <attr name="ttivi_gradient_04" format="reference" />
+        <attr name="ttivi_gradient_05" format="reference" />
+        <attr name="ttivi_gradient_06" format="reference" />
+        <attr name="ttivi_gradient_07" format="reference" />
+        <attr name="ttivi_gradient_08" format="reference" />
+        <attr name="ttivi_gradient_09" format="reference" />
+        <attr name="ttivi_gradient_10" format="reference" />
+    </declare-styleable>
+</resources>

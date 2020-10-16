@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="TtiviText.TextAppearance.Test" />
+
+    <style name="TtiviText.TextAppearance.Test.BlackMediumH1">
+        <item name="android:textColor">?attr/ttivi_color_black</item>
+        <item name="ttiviTextWeight">medium</item>
+        <item name="ttiviTextSizeIdentifier">H1</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.Test.BlackMediumH3">
+        <item name="android:textColor">?attr/ttivi_color_black</item>
+        <item name="ttiviTextWeight">medium</item>
+        <item name="ttiviTextSizeIdentifier">H3</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.Test.BlackThinH1">
+        <item name="android:textColor">?attr/ttivi_color_black</item>
+        <item name="ttiviTextWeight">thin</item>
+        <item name="ttiviTextSizeIdentifier">H1</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.Test.BlackThinH3">
+        <item name="android:textColor">?attr/ttivi_color_black</item>
+        <item name="ttiviTextWeight">thin</item>
+        <item name="ttiviTextSizeIdentifier">H3</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.Test.BlackMedium">
+        <item name="android:textColor">?attr/ttivi_color_black</item>
+        <item name="ttiviTextWeight">medium</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.Test.BlackThin">
+        <item name="android:textColor">?attr/ttivi_color_black</item>
+        <item name="ttiviTextWeight">thin</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.Test.BlackH1">
+        <item name="android:textColor">?attr/ttivi_color_black</item>
+        <item name="ttiviTextSizeIdentifier">H1</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.Test.BlackH3">
+        <item name="android:textColor">?attr/ttivi_color_black</item>
+        <item name="ttiviTextSizeIdentifier">H3</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.Test.ColorMediumH1">
+        <item name="android:textColor">?attr/ttivi_color_positive_normal</item>
+        <item name="ttiviTextWeight">medium</item>
+        <item name="ttiviTextSizeIdentifier">H1</item>
+    </style>
+
+</resources>

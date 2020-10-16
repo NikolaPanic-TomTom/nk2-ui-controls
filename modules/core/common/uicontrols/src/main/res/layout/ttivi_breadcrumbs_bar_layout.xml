@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.graphics.drawable.Icon" />
+        <import type="android.view.View.OnClickListener" />
+        <import type="androidx.lifecycle.LiveData" />
+        <import type="com.tomtom.nk2.core.common.uicontrols.R" />
+        <import type="com.tomtom.nk2.api.common.resourceresolution.drawable.DrawableResolver" />
+        <import type="com.tomtom.nk2.api.common.string_resource_helper.StringResolver" />
+
+        <variable
+            name="onBackButtonClickListener"
+            type="OnClickListener" />
+
+        <variable
+            name="rootIcon"
+            type="LiveData&lt;DrawableResolver>" />
+
+        <variable
+            name="rootLabel"
+            type="LiveData&lt;StringResolver>" />
+
+        <variable
+            name="showBreadcrumbs"
+            type="boolean" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ttivi_breadcrumbs_bar_back_button"
+            android:layout_width="?attr/ttivi_size_task_panel_top_bar_height"
+            android:layout_height="?attr/ttivi_size_task_panel_top_bar_height"
+            android:onClick="@{onBackButtonClickListener}">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="?attr/ttivi_icon_size_s"
+                android:layout_height="?attr/ttivi_icon_size_s"
+                android:layout_gravity="center"
+                android:src="@drawable/ttivi_ic_go_back"
+                auto:tint="?attr/ttivi_color_text_secondary" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="?attr/ttivi_spacing_xl"
+            android:gravity="center_vertical|start"
+            android:orientation="horizontal"
+            auto:visibleIf="@{rootIcon != null || rootLabel != null || showBreadcrumbs}">
+
+            <View
+                android:layout_width="?attr/ttivi_size_breadcrumbs_bar_separator_width"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="?attr/ttivi_spacing_xl"
+                android:background="?attr/ttivi_color_tab_bar_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|start"
+                android:orientation="horizontal"
+                auto:visibleIf="@{!showBreadcrumbs}">
+
+                <ImageView
+                    android:id="@+id/ttivi_breadcrumbs_bar_root_icon"
+                    android:layout_width="?attr/ttivi_breadcrumbs_bar_root_icon_size_default"
+                    android:layout_height="?attr/ttivi_breadcrumbs_bar_root_icon_size_default"
+                    android:layout_marginEnd="?attr/ttivi_spacing_xs"
+                    android:src="@{rootIcon}"
+                    auto:visibleIfNotNull="@{rootIcon}" />
+
+                <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+                    android:id="@+id/ttivi_breadcrumbs_bar_root_title"
+                    style="@style/TtiviBreadcrumbsBarRootLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{rootLabel}"
+                    auto:visibleIfNotNull="@{rootLabel}" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ttivi_breadcrumbs_route_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                auto:visibleIf="@{showBreadcrumbs}" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

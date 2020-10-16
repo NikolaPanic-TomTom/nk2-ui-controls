@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <!--
+     A constant to determine the acceleration of a gesture's motion just after lifting finger.
+     It is specified in pixels per sec^2.
+    -->
+    <integer name="ttivi_animation_dismiss_view_acceleration_finger_lift_px_per_sec2">500</integer>
+
+    <!--
+      A constant to determine stiffness of spring.
+      For more information refer to STIFFNESS_* constants from
+      https://developer.android.com/reference/android/support/animation/SpringForce.
+    -->
+    <integer name="ttivi_animation_dismiss_view_spring_stiffness">150</integer>
+
+    <!--
+      A constant to determine damping ratio of spring.
+      For more information refer to DAMPING_RATIO_* constants from
+      https://developer.android.com/reference/android/support/animation/SpringForce.
+      Allowed values starts from 0 and higher. The value should be divided by 100.0 to be
+      compared with values in Android documentation.
+    -->
+    <integer name="ttivi_animation_dismiss_view_spring_damping_ratio">100</integer>
+</resources>

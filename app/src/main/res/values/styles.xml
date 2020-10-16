@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="ttivi_text_size_h1">64dp</item>
+        <item name="ttivi_text_size_h2">40dp</item>
+        <item name="ttivi_text_size_h3">32dp</item>
+        <item name="ttivi_text_size_h4">28dp</item>
+        <item name="ttivi_text_size_h5">24dp</item>
+        <item name="ttivi_text_size_b1">20dp</item>
+        <item name="ttivi_text_size_b2">16dp</item>
+
+        <item name="ttivi_text_letter_spacing_to_text_size_ratio_h1">0.0</item>
+        <item name="ttivi_text_letter_spacing_to_text_size_ratio_h2">0.02</item>
+        <item name="ttivi_text_letter_spacing_to_text_size_ratio_h3">0.02</item>
+        <item name="ttivi_text_letter_spacing_to_text_size_ratio_h4">0.02</item>
+        <item name="ttivi_text_letter_spacing_to_text_size_ratio_h5">0.02</item>
+        <item name="ttivi_text_letter_spacing_to_text_size_ratio_b1">0.01</item>
+        <item name="ttivi_text_letter_spacing_to_text_size_ratio_b2">0.03</item>
+
+
+
+        <item name="ttivi_text_line_spacing_extra_h1">26dp</item>
+        <item name="ttivi_text_line_spacing_extra_h2">16dp</item>
+        <item name="ttivi_text_line_spacing_extra_h3">12dp</item>
+        <item name="ttivi_text_line_spacing_extra_h4">12dp</item>
+        <item name="ttivi_text_line_spacing_extra_h5">10dp</item>
+        <item name="ttivi_text_line_spacing_extra_b1">18dp</item>
+        <item name="ttivi_text_line_spacing_extra_b2">6dp</item>
+
+        <item name="ttivi_default_button_text_size">?attr/ttivi_text_size_h4</item>
+
+        <item name="ttivi_font_medium">@font/gotham_narrow_medium</item>
+        <item name="ttivi_font_thin">@font/gotham_narrow_book</item>
+        <item name="ttivi_font_bold">@font/gotham_narrow_bold</item>
+    </style>
+</resources>

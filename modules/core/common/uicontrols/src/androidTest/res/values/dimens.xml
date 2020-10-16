@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <dimen name="ttivi_test_ui_fixed_width">600dp</dimen>
+    <dimen name="ttivi_test_ui_fixed_height">450dp</dimen>
+    <dimen name="ttivi_test_scroll_view_width">100dp</dimen>
+    <dimen name="ttivi_test_scroll_view_height">200dp</dimen>
+    <dimen name="ttivi_test_image_fixed_size">64dp</dimen>
+    <dimen name="ttivi_test_image_fixed_spacing">5dp</dimen>
+    <dimen name="ttivi_test_grid_width">500dp</dimen>
+    <dimen name="ttivi_test_grid_height">300dp</dimen>
+    <dimen name="ttivi_test_grid_item_spacing">15dp</dimen>
+    <dimen name="ttivi_test_progressbar_height">4dp</dimen>
+    <dimen name="ttivi_test_button_small_width">250dp</dimen>
+    <dimen name="ttivi_test_button_medium_width">330dp</dimen>
+    <dimen name="ttivi_test_button_large_width">500dp</dimen>
+    <dimen name="ttivi_test_sticky_header_height">45dp</dimen>
+    <dimen name="ttivi_test_sticky_item_height">30dp</dimen>
+    <dimen name="ttivi_test_sticky_item_min_width">200dp</dimen>
+    <dimen name="ttivi_test_sticky_item_max_width">250dp</dimen>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <declare-styleable name="TtiviThemeCategoryDimensRadius">
+        <attr name="ttivi_radius_xs" format="dimension" />
+        <attr name="ttivi_radius_s" format="dimension" />
+        <attr name="ttivi_radius_m" format="dimension" />
+        <attr name="ttivi_radius_l" format="dimension" />
+
+        <!-- The elevation determines the final radius of shadow. This value does not directly
+             represent the shadow size however, as it is impacted by the radius of the elevation
+             shadow's light source, which is a very large value to ensure shadows are positioned
+             entirely underneath the elevated view. Specifying 1dp here leads to roughly 15dp of
+             rendered shadow. -->
+        <attr name="ttivi_radius_shadow_elevation_normal" format="dimension" />
+        <attr name="ttivi_radius_shadow_elevation_high" format="dimension" />
+
+        <attr name="ttivi_mainmenu_item_radius" format="dimension" />
+
+        <attr name="ttivi_default_button_radius" format="dimension" />
+
+        <attr name="ttivi_media_art_radius" format="dimension" />
+
+        <attr name="ttivi_information_control_rounded_image_corner_radius" format="dimension" />
+        <attr name="ttivi_notification_panel_rounded_image_corner_radius" format="dimension" />
+        <attr name="ttivi_contact_details_rounded_image_corner_radius" format="dimension" />
+        <attr name="ttivi_process_bar_call_rounded_image_corner_radius" format="dimension" />
+        <attr name="ttivi_process_bar_miniplayer_rounded_image_corner_radius" format="dimension" />
+
+        <attr name="ttivi_panel_border_radius" format="dimension" />
+        <attr name="ttivi_debug_panel_border_radius_internal" format="dimension" />
+    </declare-styleable>
+</resources>

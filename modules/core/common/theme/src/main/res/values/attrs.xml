@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <declare-styleable name="TtiviThemeCategoryFonts">
+        <attr name="ttivi_font_bold" format="reference" />
+        <attr name="ttivi_font_medium" format="reference" />
+        <attr name="ttivi_font_thin" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TtiviThemeCategoryStyles">
+        <attr name="ttivi_list" format="reference" />
+        <attr name="ttivi_scroll_view" format="reference" />
+        <attr name="ttivi_information_control_view" format="reference" />
+    </declare-styleable>
+
+    <attr name="ttiviTabType" format="enum">
+        <enum name="text_and_icon" value="0" />
+        <enum name="icon_only" value="1" />
+        <enum name="text_only" value="2" />
+    </attr>
+
+    <declare-styleable name="TtiviTextView">
+        <attr name="ttiviTextSizeIdentifier" format="enum">
+            <enum name="H1" value="0" />
+            <enum name="H2" value="1" />
+            <enum name="H3" value="2" />
+            <enum name="H4" value="3" />
+            <enum name="H5" value="4" />
+            <enum name="B1" value="5" />
+            <enum name="B2" value="6" />
+        </attr>
+        <attr name="ttiviTextWeight" format="enum">
+            <enum name="bold" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="thin" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TtiviTimeTextView">
+        <attr name="ttiviTimeDisplayMode" format="enum">
+            <enum name="elapsed" value="0" />
+            <enum name="remaining" value="1" />
+            <enum name="duration" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TtiviButton">
+        <attr name="ttiviActionType" format="enum">
+            <enum name="primary" value="0" />
+            <enum name="secondary" value="1" />
+            <enum name="tertiary" value="2" />
+            <enum name="acceptance" value="3" />
+            <enum name="destructive" value="4" />
+            <enum name="floating" value="5" />
+        </attr>
+        <attr name="ttiviDrawable" format="reference" />
+        <attr name="ttiviDrawableTint" format="color" />
+        <attr name="ttiviDrawableTintMatchesTextColor" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TtiviRemoteImageView">
+        <attr name="ttiviPlaceholderDrawable" format="reference" />
+        <attr name="ttiviUri" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TtiviListRecyclerView">
+        <attr name="ttiviStickyHeader" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TtiviTab">
+        <attr name="ttiviTabType" />
+    </declare-styleable>
+
+    <declare-styleable name="TtiviTabBar">
+        <attr name="ttiviTabType" />
+    </declare-styleable>
+
+    <declare-styleable name="TtiviTabFragmentPager">
+        <attr name="ttiviTabType" />
+    </declare-styleable>
+
+    <!-- NextInstruction panel attributes -->
+    <attr name="ttivi_next_instruction_distance_ellipsize">
+        <enum name="none" value="0" />
+        <enum name="start" value="1" />
+        <enum name="middle" value="2" />
+        <enum name="end" value="3" />
+        <enum name="marquee" value="4" />
+    </attr>
+
+    <attr name="ttivi_next_instruction_streetname_ellipsize">
+        <enum name="none" value="0" />
+        <enum name="start" value="1" />
+        <enum name="middle" value="2" />
+        <enum name="end" value="3" />
+        <enum name="marquee" value="4" />
+    </attr>
+
+</resources>

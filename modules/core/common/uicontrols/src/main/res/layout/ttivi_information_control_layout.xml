@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.tomtom.nk2.core.common.uicontrols.R" />
+
+        <import type="com.tomtom.nk2.core.common.uicontrols.view.TtiviCardViewRoundedImageViewModel" />
+
+        <variable
+            name="imageCornerRadius"
+            type="java.lang.Integer" />
+
+        <variable
+            name="viewModel"
+            type="com.tomtom.nk2.core.common.uicontrols.view.TtiviInformationControlViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ttivi_information_control_section"
+        style="@style/TtiviInformationControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/ttivi_size_information_control_minimum_height"
+        auto:ttiviInformationControlPaddingTemplate="@{viewModel.styling.paddingTemplate}">
+
+        <!-- Image section -->
+        <LinearLayout
+            android:id="@+id/ttivi_information_control_image_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:layout_constraintBottom_toBottomOf="parent"
+            auto:layout_constraintStart_toStartOf="parent"
+            auto:layout_constraintTop_toTopOf="parent"
+            auto:layout_constraintVertical_bias="@{viewModel.styling.imageSectionVerticalAlignment}">
+
+            <ImageView
+                android:layout_width="?attr/ttivi_information_control_icon_width"
+                android:layout_height="?attr/ttivi_information_control_icon_height"
+                android:layout_marginEnd="?attr/ttivi_spacing_m"
+                android:src="@{viewModel.icon}"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:ttiviActionType="@{viewModel.actionType}"
+                auto:ttiviTintMatchesActionType="@{viewModel.iconTintMatchesActionType}"
+                auto:visibleIfNotNull="@{viewModel.icon}" />
+
+            <include
+                layout="@layout/ttivi_cardview_rounded_image"
+                android:layout_width="?attr/ttivi_information_control_image_width"
+                android:layout_height="?attr/ttivi_information_control_image_height"
+                android:layout_marginEnd="?attr/ttivi_spacing_m"
+                auto:cornerRadius="@{imageCornerRadius}"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:viewModel="@{viewModel.roundedImage}"
+                auto:visibleIf="@{viewModel.roundedImage.sourceImage != null || viewModel.roundedImage.backgroundImage != null || viewModel.roundedImage.sourceImagePlaceholder != null}" />
+
+        </LinearLayout>
+
+        <!-- Texts section -->
+        <!-- TODO(IVI-1098): Update the text line height when Android API level 28 is used -->
+        <LinearLayout
+            android:id="@+id/ttivi_information_control_text_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            auto:layout_constrainedWidth="true"
+            auto:layout_constraintBottom_toBottomOf="parent"
+            auto:layout_constraintEnd_toStartOf="@+id/ttivi_information_control_additional_space"
+            auto:layout_constraintHorizontal_bias="0.0"
+            auto:layout_constraintStart_toEndOf="@+id/ttivi_information_control_image_section"
+            auto:layout_constraintTop_toTopOf="parent"
+            auto:layout_constraintVertical_bias="@{viewModel.styling.textSectionVerticalAlignment}">
+
+            <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+                android:id="@+id/ttivi_information_control_text_section_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@{viewModel.text1}"
+                auto:visibleIfNotNull="@{viewModel.text1}"
+                auto:ttiviInformationControlTextAppearance="@{viewModel.styling.textLine1Style}"
+                tools:text="line1"
+                tools:visibility="visible" />
+
+            <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+                android:id="@+id/ttivi_information_control_text_section_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@{viewModel.text2}"
+                auto:ttiviInformationControlTextAppearance="@{viewModel.styling.textLine2Style}"
+                auto:visibleIfNotNull="@{viewModel.text2}" />
+
+            <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+                android:id="@+id/ttivi_information_control_text_section_text3"
+                style="@style/TtiviInformationControl.Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.text3}"
+                auto:ttiviInformationControlTextAppearance="@{viewModel.styling.textLine3Style}"
+                auto:visibleIfNotNull="@{viewModel.text3}" />
+
+        </LinearLayout>
+
+        <!-- Additional section -->
+        <Space
+            android:id="@+id/ttivi_information_control_additional_space"
+            android:layout_width="?attr/ttivi_spacing_m"
+            android:layout_height="match_parent"
+            auto:layout_constraintBottom_toBottomOf="parent"
+            auto:layout_constraintEnd_toStartOf="@+id/ttivi_information_control_additional_text_barrier"
+            auto:layout_constraintTop_toTopOf="parent"
+            auto:visibleIf="@{viewModel.additionalText != null || viewModel.additionalIcon != null}" />
+
+        <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+            android:id="@+id/ttivi_information_control_text_additional_text"
+            style="@style/TtiviInformationControl.AdditionalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="?attr/ttivi_spacing_xxs"
+            android:maxWidth="?attr/ttivi_size_information_control_additional_text_max_width"
+            android:singleLine="true"
+            android:text="@{viewModel.additionalText}"
+            auto:layout_constraintBottom_toBottomOf="parent"
+            auto:layout_constraintEnd_toStartOf="@+id/ttivi_information_control_additional_icon"
+            auto:layout_constraintTop_toTopOf="parent"
+            auto:layout_constraintVertical_bias="@{viewModel.styling.additionalSectionVerticalAlignment}"
+            auto:layout_goneMarginEnd="0dp"
+            auto:ttiviTextSizeIdentifier="H5"
+            auto:ttiviTextWeight="thin"
+            auto:visibleIf="@{viewModel.additionalText != null &amp;&amp; viewModel.additionalIcon != null}" />
+
+        <ImageView
+            android:id="@+id/ttivi_information_control_additional_icon"
+            android:layout_width="?attr/ttivi_information_control_icon_width"
+            android:layout_height="?attr/ttivi_information_control_icon_height"
+            android:src="@{viewModel.additionalIcon}"
+            auto:layout_constraintBottom_toBottomOf="parent"
+            auto:layout_constraintEnd_toEndOf="parent"
+            auto:layout_constraintTop_toTopOf="parent"
+            auto:layout_constraintVertical_bias="@{viewModel.styling.additionalSectionVerticalAlignment}"
+            auto:ttiviActionType="@{viewModel.additionalActionType}"
+            auto:ttiviTintMatchesActionType="@{viewModel.additionalIconTintMatchesAdditionalActionType}"
+            auto:visibleIfNotNull="@{viewModel.additionalIcon}" />
+
+        <!--  There is no other way to set maximum width to text field conditionally
+              depending on visibility of an additional icon.
+              This text is visible only if an additional icon is not visible.
+              Short additional text view is not displayed in such case. -->
+        <com.tomtom.nk2.core.common.uicontrols.view.TtiviTextView
+            android:id="@+id/ttivi_information_control_additional_text_long"
+            style="@style/TtiviInformationControl.AdditionalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="?attr/ttivi_size_information_control_additional_text_only_max_width"
+            android:singleLine="true"
+            android:text="@{viewModel.additionalText}"
+            auto:layout_constraintBottom_toBottomOf="parent"
+            auto:layout_constraintEnd_toEndOf="parent"
+            auto:layout_constraintTop_toTopOf="parent"
+            auto:layout_constraintVertical_bias="@{viewModel.styling.additionalSectionVerticalAlignment}"
+            auto:ttiviTextSizeIdentifier="H5"
+            auto:ttiviTextWeight="thin"
+            auto:visibleIf="@{viewModel.additionalText != null &amp;&amp; viewModel.additionalIcon == null}" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/ttivi_hit_area_call_group"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="@{() -> viewModel.onClick.invoke()}"
+            auto:layout_constraintBottom_toBottomOf="parent"
+            auto:layout_constraintEnd_toStartOf="@+id/ttivi_information_control_additional_space"
+            auto:layout_constraintHorizontal_bias="0.0"
+            auto:layout_constraintStart_toStartOf="parent"
+            auto:layout_constraintTop_toTopOf="parent"
+            auto:layout_constraintVertical_bias="0.0"
+            auto:visibleIfNotNull="@{viewModel.onClick}" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/ttivi_hit_area_additional_group"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="@{() -> viewModel.onAdditionalAreaClick.invoke()}"
+            auto:layout_constraintBottom_toBottomOf="parent"
+            auto:layout_constraintEnd_toEndOf="parent"
+            auto:layout_constraintStart_toEndOf="@id/ttivi_information_control_additional_space"
+            auto:layout_constraintTop_toTopOf="parent"
+            auto:visibleIfNotNull="@{viewModel.onAdditionalAreaClick}" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/ttivi_information_control_additional_text_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            auto:barrierDirection="start"
+            auto:constraint_referenced_ids="ttivi_information_control_additional_text_long,ttivi_information_control_text_additional_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

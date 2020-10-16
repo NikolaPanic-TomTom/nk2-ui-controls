@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <!-- TODO(IVI-1200): Make system UI corners themable. -->
+    <!-- All corner radius variants below must be specified explicitly in order to generate the
+         drawables for the corners. When updating the radius, make sure to keep these in sync. -->
+    <dimen name="ttivi_systemui_corner_radius">16dp</dimen>
+    <dimen name="ttivi_systemui_corner_radius_negative">-16dp</dimen>
+    <dimen name="ttivi_systemui_corner_radius_double">32dp</dimen>
+    <dimen name="ttivi_systemui_corner_radius_double_negative">-32dp</dimen>
+</resources>

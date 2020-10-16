@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Common top-level style for IVI list styles. It should not inherit from anything
+    such as one of Android's default theme styles otherwise the UI will not look exactly
+    the same on different versions of Android and updating can change the UI. -->
+    <style name="TtiviList">
+        <item name="android:background">@null</item>
+        <item name="android:requiresFadingEdge">vertical</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:fadingEdgeLength">?attr/ttivi_size_list_fading_edge_length</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="TtiviList.NoScrolling">
+        <item name="android:requiresFadingEdge">none</item>
+        <item name="android:nestedScrollingEnabled">false</item>
+    </style>
+
+    <style name="TtiviListItem"></style>
+
+    <style name="TtiviListItem.Header"></style>
+
+    <style name="TtiviListItem.Header.Text">
+        <item name="android:textColor">?attr/ttivi_color_text_secondary</item>
+    </style>
+
+    <style name="TtiviListItem.Header.Icon">
+        <item name="android:tint">?attr/ttivi_color_text_secondary</item>
+    </style>
+
+</resources>

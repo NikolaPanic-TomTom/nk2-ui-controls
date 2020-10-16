@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Common top-level style for IVI text styles. It should not inherit from anything
+    such as one of Android's default theme styles otherwise the UI will not look exactly
+    the same on different versions of Android and updating can change the UI.
+    We also need to explicitly clear the color attributes, because they are normally set
+    by the Android framework even on a parentless style. -->
+    <style name="TtiviText" >
+        <item name="android:textColor">@null</item>
+        <item name="android:textColorHint">@null</item>
+        <item name="android:textColorHighlight">@null</item>
+        <item name="android:textColorLink">@null</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance" />
+
+    <style name="TtiviText.TextAppearance.H1">
+        <item name="android:textSize">?attr/ttivi_text_size_h1</item>
+        <item name="android:letterSpacing">?attr/ttivi_text_letter_spacing_to_text_size_ratio_h1</item>
+        <item name="android:lineSpacingExtra">?attr/ttivi_text_line_spacing_extra_h1</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.H2">
+        <item name="android:textSize">?attr/ttivi_text_size_h2</item>
+        <item name="android:letterSpacing">?attr/ttivi_text_letter_spacing_to_text_size_ratio_h2</item>
+        <item name="android:lineSpacingExtra">?attr/ttivi_text_line_spacing_extra_h2</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.H3">
+        <item name="android:textSize">?attr/ttivi_text_size_h3</item>
+        <item name="android:letterSpacing">?attr/ttivi_text_letter_spacing_to_text_size_ratio_h3</item>
+        <item name="android:lineSpacingExtra">?attr/ttivi_text_line_spacing_extra_h3</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.H4">
+        <item name="android:textSize">?attr/ttivi_text_size_h4</item>
+        <item name="android:letterSpacing">?attr/ttivi_text_letter_spacing_to_text_size_ratio_h4</item>
+        <item name="android:lineSpacingExtra">?attr/ttivi_text_line_spacing_extra_h4</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.H5">
+        <item name="android:textSize">?attr/ttivi_text_size_h5</item>
+        <item name="android:letterSpacing">?attr/ttivi_text_letter_spacing_to_text_size_ratio_h5</item>
+        <item name="android:lineSpacingExtra">?attr/ttivi_text_line_spacing_extra_h5</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.B1">
+        <item name="android:textSize">?attr/ttivi_text_size_b1</item>
+        <item name="android:letterSpacing">?attr/ttivi_text_letter_spacing_to_text_size_ratio_b1</item>
+        <item name="android:lineSpacingExtra">?attr/ttivi_text_line_spacing_extra_b1</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.B2">
+        <item name="android:textSize">?attr/ttivi_text_size_b2</item>
+        <item name="android:letterSpacing">?attr/ttivi_text_letter_spacing_to_text_size_ratio_b2</item>
+        <item name="android:lineSpacingExtra">?attr/ttivi_text_line_spacing_extra_b2</item>
+    </style>
+
+    <!-- Notification panel styles -->
+    <!-- Defined here manually because they are different from the global styles. -->
+    <style name="TtiviText.TextAppearance.H3.NotificationHeaderTitle">
+        <item name="android:lineSpacingExtra">?attr/ttivi_notification_header_title_line_spacing_extra</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.H4.NotificationHeaderDescription">
+        <item name="android:lineSpacingExtra">?attr/ttivi_notification_header_description_line_spacing_extra</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.H3.NextInstructionDistance">
+        <item name="android:fontFamily">?attr/ttivi_font_medium</item>
+        <item name="android:textColor">?attr/ttivi_color_text_primary</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.H4.NextInstructionStreetName">
+        <item name="android:fontFamily">?attr/ttivi_font_thin</item>
+        <item name="android:textColor">?attr/ttivi_color_text_secondary</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.H5.NextInstructionRoadShield">
+        <item name="android:fontFamily">?attr/ttivi_font_medium</item>
+        <item name="android:textColor">?attr/ttivi_color_white</item>
+    </style>
+
+    <style name="TtiviText.TextAppearance.H5.NextInstructionExitSign">
+        <item name="android:fontFamily">?attr/ttivi_font_medium</item>
+        <item name="android:textColor">?attr/ttivi_color_text_primary</item>
+    </style>
+
+    <!--Main menu text styles -->
+    <style name="TtiviText.MainMenu" />
+
+    <style name="TtiviText.MainMenu.TextAppearance">
+        <item name="ttiviTextSizeIdentifier">H5</item>
+        <item name="android:letterSpacing">0.023</item>
+    </style>
+
+    <style name="TtiviText.MainMenu.TextAppearance.Enabled">
+        <item name="ttiviTextWeight">thin</item>
+        <item name="android:textColor">?attr/ttivi_color_main_menu_text_enabled</item>
+    </style>
+
+    <style name="TtiviText.MainMenu.TextAppearance.Selected">
+        <item name="ttiviTextWeight">medium</item>
+        <item name="android:textColor">?attr/ttivi_color_main_menu_text_selected</item>
+    </style>
+
+    <!-- Information Control text styles -->
+    <style name="TtiviText.InformationControl" />
+
+    <style name="TtiviText.InformationControl.TextStyle1">
+        <item name="ttiviTextSizeIdentifier">H3</item>
+        <item name="ttiviTextWeight">medium</item>
+        <item name="android:textColor">?attr/ttivi_color_text_primary</item>
+    </style>
+
+    <style name="TtiviText.InformationControl.TextStyle2">
+        <item name="ttiviTextSizeIdentifier">H4</item>
+        <item name="ttiviTextWeight">medium</item>
+        <item name="android:textColor">?attr/ttivi_color_text_primary</item>
+    </style>
+
+    <style name="TtiviText.InformationControl.TextStyle3">
+        <item name="ttiviTextSizeIdentifier">H4</item>
+        <item name="ttiviTextWeight">medium</item>
+        <item name="android:textColor">?attr/ttivi_color_text_secondary</item>
+    </style>
+
+    <style name="TtiviText.InformationControl.TextStyle4">
+        <item name="ttiviTextSizeIdentifier">H4</item>
+        <item name="ttiviTextWeight">thin</item>
+        <item name="android:textColor">?attr/ttivi_color_text_primary</item>
+    </style>
+
+    <style name="TtiviText.InformationControl.TextStyle5">
+        <item name="ttiviTextSizeIdentifier">H4</item>
+        <item name="ttiviTextWeight">thin</item>
+        <item name="android:textColor">?attr/ttivi_color_text_secondary</item>
+    </style>
+
+    <style name="TtiviText.InformationControl.TextStyle6">
+        <item name="ttiviTextSizeIdentifier">H5</item>
+        <item name="ttiviTextWeight">thin</item>
+        <item name="android:textColor">?attr/ttivi_color_text_secondary</item>
+    </style>
+</resources>

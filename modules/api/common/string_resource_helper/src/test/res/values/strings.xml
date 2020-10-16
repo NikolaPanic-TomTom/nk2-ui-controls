@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <plurals name="test_plural">
+        <item quantity="one">One</item>
+        <item quantity="other">Multiple</item>
+    </plurals>
+    <plurals name="test_plural_argument">
+        <item quantity="one">One %s</item>
+        <item quantity="other">Multiple %s</item>
+    </plurals>
+    <plurals name="test_plural_multiple_arguments">
+        <item quantity="one">%1$d:%2$s One</item>
+        <item quantity="other">%2$s:%1$d Multiple</item>
+    </plurals>
+</resources>

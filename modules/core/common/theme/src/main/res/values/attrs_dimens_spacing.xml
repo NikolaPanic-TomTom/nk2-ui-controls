@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<resources>
+    <declare-styleable name="TtiviThemeCategoryDimensSpacing">
+        <attr name="ttivi_spacing_xxxs" format="dimension" />
+        <attr name="ttivi_spacing_xxs" format="dimension" />
+        <attr name="ttivi_spacing_xs" format="dimension" />
+        <attr name="ttivi_spacing_s" format="dimension" />
+        <attr name="ttivi_spacing_m" format="dimension" />
+        <attr name="ttivi_spacing_l" format="dimension" />
+        <attr name="ttivi_spacing_xl" format="dimension" />
+        <attr name="ttivi_spacing_xxl" format="dimension" />
+        <attr name="ttivi_spacing_xxxl" format="dimension" />
+
+        <!-- The ratio of the letter spacing value and text size from the UX spec. -->
+        <attr name="ttivi_text_letter_spacing_to_text_size_ratio_h1" format="float" />
+        <attr name="ttivi_text_letter_spacing_to_text_size_ratio_h2" format="float" />
+        <attr name="ttivi_text_letter_spacing_to_text_size_ratio_h3" format="float" />
+        <attr name="ttivi_text_letter_spacing_to_text_size_ratio_h4" format="float" />
+        <attr name="ttivi_text_letter_spacing_to_text_size_ratio_h5" format="float" />
+        <attr name="ttivi_text_letter_spacing_to_text_size_ratio_b1" format="float" />
+        <attr name="ttivi_text_letter_spacing_to_text_size_ratio_b2" format="float" />
+
+        <attr name="ttivi_text_line_spacing_extra_h1" format="dimension" />
+        <attr name="ttivi_text_line_spacing_extra_h2" format="dimension" />
+        <attr name="ttivi_text_line_spacing_extra_h3" format="dimension" />
+        <attr name="ttivi_text_line_spacing_extra_h4" format="dimension" />
+        <attr name="ttivi_text_line_spacing_extra_h5" format="dimension" />
+        <attr name="ttivi_text_line_spacing_extra_b1" format="dimension" />
+        <attr name="ttivi_text_line_spacing_extra_b2" format="dimension" />
+
+        <!-- The spec'd top padding minus the notification panel spacing. -->
+        <attr name="ttivi_notification_panel_padding_top" format="dimension" />
+        <attr name="ttivi_notification_panel_spacing" format="dimension" />
+        <attr name="ttivi_notification_header_title_line_spacing_extra" format="dimension" />
+        <attr name="ttivi_notification_header_description_line_spacing_extra" format="dimension" />
+
+        <attr name="ttivi_process_bar_padding_horizontal" format="dimension" />
+        <attr name="ttivi_process_bar_padding_vertical" format="dimension" />
+        <attr name="ttivi_process_bar_padding_control_about_horizontal" format="dimension" />
+        <attr name="ttivi_process_bar_control_button_padding_horizontal" format="dimension" />
+
+        <attr name="ttivi_default_button_padding_horizontal_text_only" format="dimension" />
+        <attr name="ttivi_default_button_padding_horizontal_image_only" format="dimension" />
+        <attr name="ttivi_default_button_padding_start_text_and_image" format="dimension" />
+        <attr name="ttivi_default_button_padding_end_text_and_image" format="dimension" />
+        <attr name="ttivi_default_button_padding_vertical" format="dimension" />
+
+        <attr name="ttivi_task_panel_default_spacing" format="dimension" />
+
+        <!-- NextInstruction panel attributes -->
+        <attr name="ttivi_next_instruction_distance_line_spacing_extra" format="dimension" />
+        <attr name="ttivi_next_instruction_streetname_line_spacing_extra" format="dimension" />
+
+        <attr name="ttivi_media_player_dashboard_item_spacing" format="dimension" />
+        <attr name="ttivi_media_player_home_item_spacing" format="dimension" />
+    </declare-styleable>
+</resources>

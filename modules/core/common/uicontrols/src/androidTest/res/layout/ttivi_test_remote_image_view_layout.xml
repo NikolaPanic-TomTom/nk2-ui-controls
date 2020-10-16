@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - 2020 TomTom N.V. All rights reserved.
+  ~
+  ~ This software is the proprietary copyright of TomTom N.V. and its subsidiaries and may be
+  ~ used for internal evaluation purposes or commercial use strictly subject to separate
+  ~ licensee agreement between you and TomTom. If you are the licensee, you are only permitted
+  ~ to use this Software in accordance with the terms of your license agreement. If you are
+  ~ not the licensee then you are not authorised to use this software in any manner and should
+  ~ immediately return it to TomTom N.V.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ttivi_remoteimageview_test_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/ttivi_uicontrolstest_black"
+    android:orientation="vertical"
+    android:padding="@dimen/ttivi_test_image_fixed_spacing">
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviRemoteImageView
+        android:id="@+id/ttivi_test_remoteimageview_empty"
+        android:layout_width="@dimen/ttivi_test_image_fixed_size"
+        android:layout_height="@dimen/ttivi_test_image_fixed_size"
+        android:layout_margin="@dimen/ttivi_test_image_fixed_spacing" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviRemoteImageView
+        android:id="@+id/ttivi_test_remoteimageview_placeholder_only"
+        android:layout_width="@dimen/ttivi_test_image_fixed_size"
+        android:layout_height="@dimen/ttivi_test_image_fixed_size"
+        android:layout_margin="@dimen/ttivi_test_image_fixed_spacing"
+        auto:ttiviPlaceholderDrawable="@drawable/ttivi_ic_test_square_white" />
+
+    <com.tomtom.nk2.core.common.uicontrols.view.TtiviRemoteImageView
+        android:id="@+id/ttivi_test_remoteimageview_rounded_image"
+        android:layout_width="@dimen/ttivi_test_image_fixed_size"
+        android:layout_height="@dimen/ttivi_test_image_fixed_size"
+        android:layout_margin="@dimen/ttivi_test_image_fixed_spacing"
+        android:background="@drawable/ttivi_test_rounded_image"
+        auto:ttiviPlaceholderDrawable="@drawable/ttivi_ic_test_square_white" />
+</LinearLayout>
